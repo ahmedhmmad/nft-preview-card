@@ -25,15 +25,30 @@ body {
   display: flex;
   /* justify-content: center; */
 }
-.outer-box .img img {
-  width: 250px;
-  height: 290px;
+.outer-box .img {
+  width: 350px;
+  height: 390px;
   border-radius: 0.5em;
-  margin: 1em 4em;
+  margin: 1em 8em;
+  background-image: url(./images/image-equilibrium.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.outer-box .img:hover {
+  background-color: #00fff76e;
+  background-image: url(./images/image-equilibrium.jpg),
+    url(./images/icon-view.svg);
+  background-size: cover, 40px;
+  background-position: 0 0, 50%;
+  background-blend-mode: lighten;
 }
 .outer-box .text h2 {
   color: hsl(0, 0%, 100%);
   margin: 0.3em 2.5em;
+}
+.outer-box .text h2:hover {
+  color: hsl(178, 100%, 50%);
 }
 .outer-box .text h3 {
   color: hsl(215, 51%, 70%);
